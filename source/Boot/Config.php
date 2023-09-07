@@ -4,14 +4,14 @@
  */
 define("CONF_DB_HOST", "localhost");
 define("CONF_DB_USER", "root");
-define("CONF_DB_PASS", "%100887Gp");
+define("CONF_DB_PASS", "");
 define("CONF_DB_NAME", "fullstackphp");
 
 /**
  * PROJECT URLs
  */
 define("CONF_URL_BASE", "https://www.cafecontrol.com.br");
-define("CONF_URL_TEST", "https://www.localhost/fsphp");
+define("CONF_URL_TEST", "https://www.localhost/cursos/fsphp");
 define("CONF_URL_ADMIN", "/admin");
 
 /**
@@ -57,21 +57,12 @@ define("CONF_PASSWD_ALGO", PASSWORD_DEFAULT);
 define("CONF_PASSWD_OPTION", ["cost" => 10]);
 
 /**
- * MESSAGE
- */
-define("CONF_MESSAGE_CLASS", "message");
-define("CONF_MESSAGE_INFO", "info icon-info");
-define("CONF_MESSAGE_SUCCESS", "success icon-check-square-o");
-define("CONF_MESSAGE_WARNING", "warning icon-warning");
-define("CONF_MESSAGE_ERROR", "error icon-warning");
-
-/**
  * VIEW
  */
 define("CONF_VIEW_PATH", __DIR__ . "/../../shared/views");
 define("CONF_VIEW_EXT", "php");
 define("CONF_VIEW_THEME", "cafeweb");
-define("CONF_VIEW_APP", "cafapp");
+define("CONF_VIEW_APP", "cafeapp");
 
 /**
  * UPLOAD
@@ -91,10 +82,10 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 /**
  * MAIL
  */
-define("CONF_MAIL_HOST", "smtp.gmail.com");
-define("CONF_MAIL_PORT", 587);
-define("CONF_MAIL_USER", "gleysonandrade199@gmail.com");
-define("CONF_MAIL_PASS", "%100887Gp");
+define("CONF_MAIL_HOST", "mail.gleysondev.com.br");
+define("CONF_MAIL_PORT", 465);
+define("CONF_MAIL_USER", "contato@gleysondev.com.br");
+define("CONF_MAIL_PASS", "SLo+MEL[%]++");
 define("CONF_MAIL_SENDER", ["name" => "Gleyson A Andrade", "address" => "gleysonandrade199@gmail.com"]);
 define("CONF_MAIL_SUPPORT", "gleysonandrade199@gmail.com");
 define("CONF_MAIL_OPTION_LANG", "br");

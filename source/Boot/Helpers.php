@@ -85,6 +85,17 @@ function str_title(string $string): string
 }
 
 /**
+ * @param string $text
+ * @return string
+ */
+function str_textarea(string $text): string
+{
+    $text = filter_var($text, FILTER_SANITIZE_STRIPPED);
+    $arrayReplace = ["&#10", "&#10;&#10", "&#10,&#10,&#10", "&#10,&#10,&#10,&#10", "&#10,&#10,&#10,&#10,&#10"];
+    return "<p>". str_replace($arrayReplace, "<p></p>", $text) . "</p>";
+}
+
+/**
  * @param string $string
  * @param int $limit
  * @param string $pointer
@@ -119,6 +130,15 @@ function str_limit_chars(string $string, int $limit, string $pointer = "..."): s
 
     $chars = mb_substr($string, 0, mb_strrpos(mb_substr($string, 0, $limit), " "));
     return "{$chars}{$pointer}";
+}
+
+/**
+ * @param string $price
+ * @return string
+ */
+function str_price(string  $price): string
+{
+    return number_format($price, 2, ",", ".");
 }
 
 /**
@@ -177,21 +197,30 @@ function redirect(string $url): void
  */
 
 /**
+ * @return \Source\Models\User|null
+ */
+function user(): ?\Source\Models\User
+{
+    return \Source\Models\Auth::user();
+}
+
+/**
  * @param string|null $path
+ * @param string $theme
  * @return string
  */
-function theme(string $path = null): string
+function theme(string $path = null, string $theme = CONF_VIEW_THEME): string
 {
     if (strpos($_SERVER['HTTP_HOST'], "localhost")) {
         if ($path) {
-            return CONF_URL_TEST . "/themes/". CONF_VIEW_THEME . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+            return CONF_URL_TEST . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
         }
-        return CONF_URL_TEST . "/themes/" . CONF_VIEW_THEME;
+        return CONF_URL_TEST . "/themes/{$theme}";
     }
     if ($path) {
-        return CONF_URL_BASE . "/themes/". CONF_VIEW_THEME . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+        return CONF_URL_BASE . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
     }
-    return CONF_URL_BASE . "/themes/" . CONF_VIEW_THEME;
+    return CONF_URL_BASE . "/themes/{$theme}";
 }
 
 /**
@@ -315,4 +344,50 @@ function flash(): ?string
         echo $flash;
     }
     return null;
+}
+
+/**
+ * Limita a quantidade de requisições
+ * @param string $key
+ * @param int $limit
+ * @param int $seconds
+ * @return bool
+ */
+function request_limit(string $key, int $limit = 5, int $seconds = 60): bool
+{
+    $session = new \Source\Core\Session();
+    if ($session->has($key) && $session->$key->time >= time() && $session->$key->requests < $limit) {
+        $session->set($key, [
+            "time" => time() + $seconds,
+            "requests" => $session->$key->requests + 1
+        ]);
+        return false;
+    }
+
+    if ($session->has($key) && $session->$key->time >= time() && $session->$key->requests >= $limit) {
+        return true;
+    }
+
+    $session->set($key, [
+        "time" => time() + $seconds,
+        "requests" => 1
+    ]);
+
+    return false;
+}
+
+/**
+ * @param string $field
+ * @param string $value
+ * @return bool
+ */
+function request_repeat(string $field, string $value): bool
+{
+    $session = new \Source\Core\Session();
+    if ($session->has($field) && $session->$field == $value) {
+        return true;
+    }
+
+    $session->set($field, $value);
+    return false;
 }

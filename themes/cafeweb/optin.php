@@ -12,3 +12,12 @@
         </div>
     </div>
 </article>
+
+<?php if (!empty($track)): ?>
+    <?php $v->start("scripts"); ?>
+        <script>
+            fbq('track', '<?= $track->fb;?>');
+            gtag('event', 'conversion', {'send_to': '<?= $track->aw;?>'});
+        </script>
+    <?php $v->end(); ?>
+<?php endif; ?>

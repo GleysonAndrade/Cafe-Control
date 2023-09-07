@@ -9,7 +9,10 @@ use Source\Models\Category;
 use Source\Models\Faq\Channel;
 use Source\Models\Faq\Question;
 use Source\Models\Post;
+use Source\Models\Report\Access;
+use Source\Models\Report\Online;
 use Source\Models\User;
+use Source\Support\Email;
 use Source\Support\Pager;
 
 /**
@@ -21,11 +24,21 @@ class Web extends Controller
     /**
      * Web constructor
      */
-    public function __construct() 
+    public function __construct()
     {
-//        redirect("/ops/manutencao");
-//        Connect::getInstance();
-        parent::__construct(__DIR__ . "/../../themes/" .CONF_VIEW_THEME. "/");
+//      redirect("/ops/manutencao");
+//      Connect::getInstance();
+        parent::__construct(__DIR__ . "/../../themes/" . CONF_VIEW_THEME . "/");
+
+        (new Access())->report();
+        (new Online())->report();
+
+        // $email = new Email();
+        // $email->bootstrap(//    "Teste de fila de e-mail".time(),
+        //     "Este e apenas um teste de envio de e-mail",
+        //     "gleysondev@yahoo.com",
+        //    "Gleyson A Andrade"
+        // )->sendQueue();
     }
 
     /**
@@ -108,7 +121,7 @@ class Web extends Controller
 
         $blog = (new Post())->find();
         $pager = new Pager(url("/blog/p/"));
-        $pager->pager($blog->count(),9, ($data['page'] ?? 1));
+        $pager->pager($blog->count(), 9, ($data['page'] ?? 1));
 
         echo $this->view->render("blog", [
             "head" => $head,
@@ -136,9 +149,9 @@ class Web extends Controller
         $pager->pager($blogCategory->count(), 9, $page);
 
         $head = $this->seo->render(
-          "Artigos em {$category->title} - ".CONF_SITE_NAME,
-          $category->description,
-          url("blog/em/{$category->uri}/{$page}"),
+            "Artigos em {$category->title} - " . CONF_SITE_NAME,
+            $category->description,
+            url("blog/em/{$category->uri}/{$page}"),
             ($category->cover ? image($category->cover, 1200, 628) : theme("/assets/images/share.jg"))
         );
 
@@ -147,10 +160,10 @@ class Web extends Controller
             "title" => "Artigos em {$category->title}",
             "desc" => $category->description,
             "blog" => $blogCategory
-            ->limit($pager->limit())
-            ->offset($pager->offset())
-            ->order("post_at DESC")
-            ->fetch(true),
+                ->limit($pager->limit())
+                ->offset($pager->offset())
+                ->order("post_at DESC")
+                ->fetch(true),
             "paginator" => $pager->render()
         ]);
     }
@@ -239,19 +252,28 @@ class Web extends Controller
 
     /**
      * SITE LOGIN
-     * @return void
      * @param null|array $data
+     * @return void
      */
     public function login(?array $data): void
     {
-        if (!empty($data['csrf'])) {
+        //restringe as páginas a usuários não conectados
+        if (Auth::user()) {
+            redirect("/app");
+        }
 
-            if (!empty($data['csrf'])) {
-                if (!csrf_verify($data)) {
-                    $json['message'] = $this->message->error("Erro ao enviar, favor use formulário")->render();
-                    echo json_encode($json);
-                    return;
-                }
+        if (!empty($data['csrf'])) {
+            if (!csrf_verify($data)) {
+                $json['message'] = $this->message->error("Erro ao enviar, favor use formulário")->render();
+                echo json_encode($json);
+                return;
+            }
+
+            //verifica o limite de requisições
+            if (request_limit("weblogin", 3, 60 * 5)) {
+                $json['message'] = $this->message->error("Você já efetuou 3 tentativas, esse e o limite. Por favor aguarde 5 minutos para tentar novamente.")->render();
+                echo json_encode($json);
+                return;
             }
 
             //verifica se existe o email ou a senha
@@ -269,7 +291,7 @@ class Web extends Controller
             if ($login) {
                 $json['redirect'] = url("/app");
             } else {
-                $json['message'] = $auth->message()->render();
+                $json['message'] = $auth->message()->before("Ooops! ")->render();
             }
 
             echo json_encode($json);
@@ -295,6 +317,11 @@ class Web extends Controller
      */
     public function forget(?array $data)
     {
+        //restringe as páginas a usuários não conectados
+        if (Auth::user()) {
+            redirect("/app");
+        }
+
         if (!empty($data['csrf'])) {
             if (!csrf_verify($data)) {
                 $json['message'] = $this->message->error("Erro ao enviar, favor use formulário")->render();
@@ -309,11 +336,17 @@ class Web extends Controller
                 return;
             }
 
+            if (request_repeat("webforget", $data['email'])) {
+                $json['message'] = $this->message->info("Ooops! Você já tentou esse e-mail antes.")->render();
+                echo json_encode($json);
+                return;
+            }
+
             $auth = new Auth();
             if ($auth->forget($data["email"])) {
                 $json["message"] = $this->message->success("Acesse seu e-mail para recuperar a senha.")->render();
             } else {
-                $json["message"] = $auth->message()->render();
+                $json["message"] = $auth->message()->before("Ooops! ")->render();
             }
 
             echo json_encode($json);
@@ -337,8 +370,13 @@ class Web extends Controller
      * @param array $data
      * @return void
      */
-    public function reset(array  $data): void
+    public function reset(array $data): void
     {
+        //restringe as páginas a usuários não conectados
+        if (Auth::user()) {
+            redirect("/app");
+        }
+
         if (!empty($data['csrf'])) {
             if (!csrf_verify($data)) {
                 $json['message'] = $this->message->error("Erro ao enviar, favor use formulário")->render();
@@ -359,7 +397,7 @@ class Web extends Controller
                 $this->message->success("Senha alterada com sucesso. Vamos controlar?")->flash();
                 $json["redirect"] = url("/entrar");
             } else {
-                $json["menssage"] = $auth->message()->render();
+                $json['message'] = $auth->message()->before("Ooops! ")->render();
             }
 
             echo json_encode($json);
@@ -374,8 +412,8 @@ class Web extends Controller
         );
 
         echo $this->view->render("auth-reset", [
-           "head" => $head,
-           "code" => $data["code"]
+            "head" => $head,
+            "code" => $data["code"]
         ]);
     }
 
@@ -400,7 +438,7 @@ class Web extends Controller
 
             $auth = new Auth();
             $user = new User();
-            $user-> bootstrap(
+            $user->bootstrap(
                 $data['first_name'],
                 $data['last_name'],
                 $data['email'],
@@ -410,7 +448,7 @@ class Web extends Controller
             if ($auth->register($user)) {
                 $json['redirect'] = url("/confirma");
             } else {
-                $json['message'] = $auth-> message()->render();
+                $json['message'] = $auth->message()->before("Ooops! ")->render();
             }
 
             echo json_encode($json);
@@ -444,7 +482,7 @@ class Web extends Controller
 
         echo $this->view->render("optin", [
             "head" => $head,
-            "data" => (object) [
+            "data" => (object)[
                 "title" => "Falta pouco! Confirme seu cadastro.",
                 "desc" => "Enviamos um link de confirmação para seu e-mail. Acesse e siga as instruções para concluir seu cadastro e comece a controlar com o CaféControl",
                 "image" => theme("/assets/images/optin-confirm.jpg")
@@ -476,12 +514,16 @@ class Web extends Controller
 
         echo $this->view->render("optin-success", [
             "head" => $head,
-            "data" => (object) [
+            "data" => (object)[
                 "title" => "Tudo pronto. Você já pode controlar :)",
                 "desc" => "Bem-vindo(a) ao seu controle de contas, vamos tomar um café?",
                 "image" => theme("/assets/images/optin-success.jpg"),
                 "link" => url("/entrar"),
                 "linkTitle" => "Fazer login"
+            ],
+            "track" => (object) [
+                "fb" => "Lead",
+                "aw" => "AW-953362805/yAFTCKuakIwBEPXSzMYD"
             ]
         ]);
     }
@@ -518,7 +560,7 @@ class Web extends Controller
                 $error->title = "Estamos enfrentando problemas";
                 $error->message = "Parece que nosso serviço não está disponivel no momento. Já estamos vendo isso mas caso precise, envie um e-mail :)";
                 $error->linkTitle = "ENVIAR E-MAIL";
-                $error->link = "mailto:" .CONF_MAIL_SUPPORT;
+                $error->link = "mailto:" . CONF_MAIL_SUPPORT;
                 break;
             case "manutencao":
                 $error->code = "OPS";

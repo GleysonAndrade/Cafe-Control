@@ -46,11 +46,16 @@ $route->post("/recuperar/resetar", "Web:reset");
 $route->get("/confirma", "Web:confirm");
 $route->get("/obrigado/{email}", "Web:success");
 
-/*
+/**
  * APP
  */
 $route->group("/app");
 $route->get("/", "App:home");
+$route->get("/receber", "App:income");
+$route->get("/pagar", "App:expense");
+$route->get("/fatura/{invoice_id}", "App:invoice");
+
+$route->get("/perfil", "App:profile");
 $route->get("/sair", "App:logout");
 
 /*

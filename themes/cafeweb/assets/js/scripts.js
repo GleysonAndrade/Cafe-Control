@@ -63,7 +63,7 @@ $(function () {
     });
 
     //ajax form
-    $("form:not('.ajax_off')").submit(function (e) {
+    $("form:not('.')").submit(function (e) {
         e.preventDefault();
         var form = $(this);
         var load = $(".ajax_load");
@@ -81,6 +81,8 @@ $(function () {
                 //redirect
                 if (response.redirect) {
                     window.location.href = response.redirect;
+                } else {
+                    load.fadeOut(200);
                 }
 
                 //message
@@ -96,13 +98,11 @@ $(function () {
                 }
             },
             complete: function () {
-                load.fadeOut(200);
-
                 if (form.data("reset") === true) {
                     form.trigger("reset");
                 }
             }
         });
 
-    })
+    });
 });

@@ -27,12 +27,4 @@ class Category extends Model
         $find = $this->find("uri = :uri", "uri={$uri}", $columns);
         return $find->fetch();
     }
-
-    /**
-     * @return bool
-     */
-    public function save(): bool
-    {
-        
-    }
 }
