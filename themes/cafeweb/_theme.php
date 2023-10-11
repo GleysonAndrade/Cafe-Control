@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+        <meta name="mit" content="2023-09-11T21:33:49-03:00+199287">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <?= $head; ?>
@@ -33,7 +34,6 @@
                 <a class="link transition radius" title="Sobre" href="<?= url("/sobre"); ?>">Sobre</a>
                 <a class="link transition radius" title="Blog" href="<?= url("/blog"); ?>">Blog</a>
 
-                <!-- Verifica se o usuário está logado-->
                 <?php if (\Source\Models\Auth::user()): ?>
                     <a class="link login transition radius icon-coffee" title="Controlar"
                        href="<?= url("/app"); ?>">Controlar</a>
@@ -41,6 +41,7 @@
                     <a class="link login transition radius icon-sign-in" title="Entrar"
                        href="<?= url("/entrar"); ?>">Entrar</a>
                 <?php endif; ?>
+
             </div>
         </nav>
     </div>
@@ -105,16 +106,8 @@
     </div>
 </footer>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HYQTZC295F"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53658515-18"></script>
 <script src="<?= theme("/assets/scripts.js"); ?>"></script>
-
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-HYQTZC295F');
-</script>
 <?= $v->section("scripts"); ?>
 
 </body>

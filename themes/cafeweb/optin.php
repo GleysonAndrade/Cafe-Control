@@ -7,7 +7,8 @@
             <h1><?= $data->title; ?></h1>
             <p><?= $data->desc; ?></p>
             <?php if (!empty($data->link)): ?>
-                <a class="optin_page_btn gradient gradient-green gradient-hover radius" href="<?= $data->linkTitle; ?>" title="<?= $data->linktitle; ?>"><?= $data->linktitle; ?>"</a>
+                <a class="optin_page_btn gradient gradient-green gradient-hover radius"
+                   href="<?= $data->link; ?>" title="<?= $data->linkTitle; ?>"><?= $data->linkTitle; ?></a>
             <?php endif; ?>
         </div>
     </div>
@@ -15,9 +16,9 @@
 
 <?php if (!empty($track)): ?>
     <?php $v->start("scripts"); ?>
-        <script>
-            fbq('track', '<?= $track->fb;?>');
-            gtag('event', 'conversion', {'send_to': '<?= $track->aw;?>'});
-        </script>
+    <script>
+        fbq('track', '<?= $track->fb;?>');
+        gtag('event', 'conversion', {'send_to': '<?= $track->aw;?>'});
+    </script>
     <?php $v->end(); ?>
 <?php endif; ?>

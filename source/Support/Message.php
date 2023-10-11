@@ -50,7 +50,7 @@ class Message
 
     /**
      * @param string $text
-     * @return $this
+     * @return Message
      */
     public function before(string $text): Message
     {
@@ -60,7 +60,7 @@ class Message
 
     /**
      * @param string $text
-     * @return $this
+     * @return Message
      */
     public function after(string $text): Message
     {

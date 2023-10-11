@@ -44,7 +44,7 @@ class User extends Model
     }
 
     /**
-     * @param int $id
+     * @param string $email
      * @param string $columns
      * @return null|User
      */
@@ -59,17 +59,11 @@ class User extends Model
      */
     public function photo(): ?string
     {
-        if ($this->photo && file_exists(__DIR__."/../../".CONF_UPLOAD_DIR."/{$this->photo}")) {
+        if ($this->photo && file_exists(__DIR__ . "/../../" . CONF_UPLOAD_DIR ."/{$this->photo}")) {
             return $this->photo;
         }
         return null;
     }
-
-//    public function findById(int $id, string $columns = "*"): ?User
-//    {
-//        $find = $this->find("id = :id", "id={$id}", $columns);
-//        return $find->fetch();
-//    }
 
     /**
      * @return bool

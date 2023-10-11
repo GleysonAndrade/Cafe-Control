@@ -8,12 +8,13 @@ use Source\Core\View;
 use Source\Support\Email;
 
 /**
- *
+ * Class Auth
+ * @package Source\Models
  */
 class Auth extends Model
 {
     /**
-     * Auth Contructor
+     * Auth constructor.
      */
     public function __construct()
     {
@@ -21,7 +22,7 @@ class Auth extends Model
     }
 
     /**
-     * @return User|null
+     * @return null|User
      */
     public static function user(): ?User
     {
@@ -29,11 +30,11 @@ class Auth extends Model
         if (!$session->has("authUser")) {
             return null;
         }
+
         return (new User())->findById($session->authUser);
     }
 
     /**
-     * @return void
      * log-out
      */
     public static function logout(): void
@@ -56,10 +57,9 @@ class Auth extends Model
         $view = new View(__DIR__ . "/../../shared/views/email");
         $message = $view->render("confirm", [
             "first_name" => $user->first_name,
-            "confirm_link" => url("/obrigado/". base64_encode($user->email))
+            "confirm_link" => url("/obrigado/" . base64_encode($user->email))
         ]);
 
-        //envia o e-mail de confirmação da conta do usuário
         (new Email())->bootstrap(
             "Ative sua conta no " . CONF_SITE_NAME,
             $message,
@@ -78,48 +78,41 @@ class Auth extends Model
      */
     public function login(string $email, string $password, bool $save = false): bool
     {
-        //verifica se o e-mail é válido
         if (!is_email($email)) {
-            $this->message->warning("O e-mail informado não e válido");
+            $this->message->warning("O e-mail informado não é válido");
             return false;
         }
 
-        //cria cookie com e-mail
         if ($save) {
-             setcookie("authEmail", $email, time() + 604800, "/");
+            setcookie("authEmail", $email, time() + 604800, "/");
         } else {
             setcookie("authEmail", null, time() - 3600, "/");
         }
 
-        //verifica se a senha enviada confere com a cadastrada
         if (!is_passwd($password)) {
-            $this->message->warning("A senha informada não e válida");
+            $this->message->warning("A senha informada não é válida");
             return false;
         }
 
-        //verifica o e-mail enviado e igual ao cadastrado
         $user = (new User())->findByEmail($email);
-
         if (!$user) {
             $this->message->error("O e-mail informado não está cadastrado");
             return false;
         }
 
-        //verifica se a senha está correta
-        if (!password_verify($password, $user->password)) {
-            $this->message->error("A senha informada   não confere");
+        if (!passwd_verify($password, $user->password)) {
+            $this->message->error("A senha informada não confere");
             return false;
         }
 
-        //verifica se a senha precisa ser atualizada no banco
         if (passwd_rehash($user->password)) {
-            $user->password  = $password;
+            $user->password = $password;
             $user->save();
         }
 
-        //login
+        //LOGIN
         (new Session())->set("authUser", $user->id);
-        $this->message->success("Login  efetuado com sucesso")->flash();
+        $this->message->success("Login efetuado com sucesso")->flash();
         return true;
     }
 

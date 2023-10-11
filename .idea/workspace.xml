@@ -4,47 +4,249 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a511c87c-dae5-4ce1-825e-24318859ba25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shared/scripts/tracker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Boot/Minify/App.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Models/CafeApp/AppCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Models/CafeApp/AppInvoice.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Models/CafeApp/AppWallet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Models/Report/Access.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Models/Report/Online.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/cafeapp/_theme.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/cafeapp/home.php" afterDir="false" />
+    <list default="true" id="3276c3bd-49ab-466c-8545-5ae7a38df8bf" name="Changes" comment="Integralção Pagar.me">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/529b93e1-ea55-4dcd-9460-5f6df2296fa0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/529b93e1-ea55-4dcd-9460-5f6df2296fa0/storage_v2/_src_/schema/fullstackphp.f6XNBg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/529b93e1-ea55-4dcd-9460-5f6df2296fa0/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/529b93e1-ea55-4dcd-9460-5f6df2296fa0/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/529b93e1-ea55-4dcd-9460-5f6df2296fa0/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/scripts/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/scripts/highcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/scripts/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/scripts/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/scripts/jquery.form.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/scripts/jquery.form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/scripts/jquery.mask.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/scripts/jquery.mask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/scripts/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/scripts/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/scripts/tracker.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/scripts/tracker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/styles/boot.css" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/boot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.eot" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.woff" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/views/email/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/shared/views/email/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/views/email/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/shared/views/email/confirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/views/email/forget.php" beforeDir="false" afterPath="$PROJECT_DIR$/shared/views/email/forget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/App/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/App.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/App/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Boot/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Boot/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Boot/Minify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Minify/Web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Boot/Minify/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Minify/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Boot/Minify/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Minify/Web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Core/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Core/Route.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Core/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/CafeApp/AppCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/CafeApp/AppCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/CafeApp/AppInvoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/CafeApp/AppInvoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/CafeApp/AppWallet.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/CafeApp/AppWallet.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Models/Faq/Channel.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Faq/Channel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Models/Faq/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Faq/Question.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Report/Access.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Report/Access.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Report/Online.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Report/Online.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Support/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Email.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Support/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Support/Pager.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Pager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Support/Seo.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Seo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Support/Thumb.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Thumb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Support/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/a-jornada-do-aluno-e-como-garantir-o-sucesso-do-seu-infoproduto-1517918955-600x340-35cf0e40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/aprenda-a-criar-arquivo-pdf-utilizando-php-de-forma-descomplicada-1526479202-600x340-9d721d5f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/aprenda-a-criar-um-componente-de-notificacao-para-seu-site-1527515035-600x340-0156e511.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/aprenda-a-fazer-relacionamento-e-mantenha-a-integridade-do-seu-banco-de-dados-1524488193-600x340-2e73bf93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/como-construir-o-seu-primeiro-endpoint-para-que-outras-aplicacoes-possam-consumir-seus-dados-1527512447-600x340-49e7d3da.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/criando-relatorios-em-graficos-com-php-utilizando-a-biblioteca-chartjs-e-banco-de-dados-1532694577-1200x628-4dc394c7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/criando-relatorios-em-graficos-com-php-utilizando-a-biblioteca-chartjs-e-banco-de-dados-1532694577-1280-4dc394c7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/criando-sua-primeira-funcao-no-banco-de-dados-1525127948-600x340-f75feab6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/crie-um-instalador-de-estrutura-do-banco-de-dados-para-o-seu-cms-utilizando-php-e-ajax-1533220470-1200x628-0d2edff0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/crie-um-instalador-de-estrutura-do-banco-de-dados-para-o-seu-cms-utilizando-php-e-ajax-1533220470-1280-0d2edff0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/crie-variaveis-dentro-da-sua-funcao-e-execute-um-loop-no-postgresql-1527712218-600x340-681675bd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/debugando-funcao-no-postgresql-1525725373-600x340-85128e88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/executando-tarefas-automaticas-com-o-recurso-cron-1517876194-600x340-4c74ff87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/execute-dblink-no-postgresql-e-se-conecte-com-outros-bancos-e-outros-servidores-sem-sair-da-sua-funcao-1528314988-1200x628-00163ec6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/execute-dblink-no-postgresql-e-se-conecte-com-outros-bancos-e-outros-servidores-sem-sair-da-sua-funcao-1528314988-1280-00163ec6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/integracao-do-paypal-com-pagamentos-recorrente-e-postback-das-informacoes-1527880721-600x340-fd5ce231.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/os-principios-do-design-responsivo-para-criar-sites-que-se-ajustam-a-qualquer-dispositivo-1518701351-600x340-5c727547.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/overview-de-arquitetura-saas-e-estudo-de-3-aplicativos-com-suas-possiveis-estruturas-1520431107-600x340-0366369d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/refine-ainda-mais-o-processo-de-integridade-das-suas-informacoes-no-postgresql-1524575939-600x340-262b148f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/robsonvleite-260x260-01c2c240.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/sequence-vs-auto-increment-criacao-e-comportamento-1524488117-600x340-e8dfd74b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/sistema-de-pesquisa-com-previa-de-resultados-em-tempo-real-com-ajax-e-php-1527169056-1200x628-e2337ad0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/sistema-de-pesquisa-com-previa-de-resultados-em-tempo-real-com-ajax-e-php-1527169056-1280-e2337ad0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/sistema-de-pesquisa-com-previa-de-resultados-em-tempo-real-com-ajax-e-php-1527169056-600x340-e2337ad0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/subindo-ambiente-web-na-amazon-aws-ec2-com-recursos-gratuitos-1533905294-1200x628-e2e3f8d3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/subindo-ambiente-web-na-amazon-aws-ec2-com-recursos-gratuitos-1533905294-1280-e2e3f8d3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/subindo-ambiente-web-na-amazon-aws-ec2-com-recursos-gratuitos-1533905294-600x340-e2e3f8d3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/trackeamento-de-link-com-google-analytics-1523889078-600x340-eedde13d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/images/cache/utilize-transacao-no-postgresql-com-apenas-3-palavras-reservadas-1526392851-600x340-0c639e15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/assets/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/assets/css/message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/assets/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/assets/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/assets/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/invoices.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/invoices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/recurrences.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/recurrences.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/views/balance.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/views/balance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/views/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/views/invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/views/modals.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/views/modals.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/views/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/views/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/_theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/css/message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/images/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/images/thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/assets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/expense.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/income.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/invoice.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/profile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/views/balance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/views/modals.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeappbackup/views/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/css/boot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/css/fonts/fsphp.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/css/fonts/fsphp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/css/fonts/fsphp.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/css/fonts/fsphp.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/empty-content.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/faq-title.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/footer-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/home-app.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/home-featured.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/home_control.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/home_pay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/home_receive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/optin-confirm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/images/optin-success.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/js/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/assets/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/about.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/auth-forget.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/auth-login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/auth-register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/blog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/empty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/optin-confirm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/optin-success.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/optout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/__template/views/terms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/empty-content.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/faq-title.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/footer-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/home-app.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/home-featured.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/home_control.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/home_pay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/home_receive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/optin-confirm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/images/optin-success.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/assets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecontrolback/views/blog-post.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/cafeweb/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/assets/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/assets/css/message.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/cafeweb/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/cafeweb/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/assets/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafeweb/assets/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafeweb/assets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/assets/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/assets/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/auth-forget.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/auth-forget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/auth-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/auth-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/auth-register.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/auth-register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/auth-reset.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/auth-reset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/cafeweb/blog-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/blog-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/blog-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/blog-post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/cafeweb/optin.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/optin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeweb/terms.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeweb/terms.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/minifycss" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/minifycss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/minifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/minifyjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/cropper/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/cropper/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/cropper/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/cropper/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/cropper/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/cropper/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/cropper/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/cropper/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/cropper/example/thumb.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/cropper/example/thumb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/cropper/src/Cropper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/cropper/src/Cropper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/optimizer/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/optimizer/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/optimizer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/optimizer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/optimizer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/optimizer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/optimizer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/optimizer/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/optimizer/example/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/optimizer/example/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/optimizer/src/MetaTags.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/optimizer/src/MetaTags.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/optimizer/src/Optimizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/optimizer/src/Optimizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/paginator/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/paginator/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/paginator/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/paginator/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/paginator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/paginator/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/paginator/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/paginator/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/paginator/example/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/paginator/example/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/paginator/example/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/paginator/example/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/paginator/src/Paginator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/paginator/src/Paginator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/Test/Coffee.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/Test/Coffee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/Test/Name.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/Test/Name.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/spoofing/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/spoofing/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/spoofing/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/spoofing/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/src/Dispatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/src/Dispatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/src/RouterTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/router/src/RouterTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/file.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/send.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/example/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Send.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Send.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Uploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coffeecode/uploader/src/Uploader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
@@ -57,11 +259,121 @@
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/_data/images.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/_data/images.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/_data/menu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/_data/menu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/_data/project.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/_data/project.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/css/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/engine/extensions.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/engine/extensions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/engine/framework-integration.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/engine/framework-integration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/engine/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/engine/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/simple-example.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/simple-example.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/doc/upgrading-from-v3.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/doc/upgrading-from-v3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/docs-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/docs-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/example/example.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/example/example.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/example/templates/layout.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/example/templates/layout.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/example/templates/profile.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/example/templates/profile.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/example/templates/sidebar.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/example/templates/sidebar.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/peridot.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/peridot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/scripts/build-docs.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/scripts/build-docs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Engine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Exception/FuncException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Exception/FuncException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Exception/HydrateTemplateException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Exception/HydrateTemplateException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Exception/PlatesException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Exception/PlatesException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Exception/RenderTemplateException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Exception/RenderTemplateException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Exception/StackException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Exception/StackException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Data/DataExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Data/DataExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Data/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Data/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/ExtensionInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/ExtensionInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Folders/FoldersExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Folders/FoldersExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Folders/folders.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Folders/folders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/DefaultLayoutRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/DefaultLayoutRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/LayoutRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/LayoutRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/LayoutSectionsExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/LayoutSectionsExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/Sections.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/Sections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/layout-sections.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/LayoutSections/layout-sections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Path/PathExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Path/PathExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Path/ResolvePathArgs.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Path/ResolvePathArgs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Path/path.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Path/path.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/FuncArgs.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/FuncArgs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/RenderContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/RenderContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/RenderContextExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/RenderContextExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/func.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/render-context.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/RenderContext/render-context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/PlatesExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/PlatesExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/ComposeRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/ComposeRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/FileSystemRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/FileSystemRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/MapContentRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/MapContentRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/MockRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/MockRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/PhpRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/PhpRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/RenderTemplateDecorator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/RenderTemplateDecorator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/StaticFileRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/StaticFileRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/ValidatePathRenderTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/RenderTemplate/ValidatePathRenderTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Template/match.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/match.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/TemplateReference.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/TemplateReference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Util/Container.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Util/Container.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/src/Util/util.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/src/Util/util.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/_layout.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/_layout.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/_override.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/_override.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/main.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/main.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/partial.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/default-layout/partial.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/normalize-name/main.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/normalize-name/main.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/alerts.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/alerts.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/layouts/layout.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/layouts/layout.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/main.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/main.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/partials/components/header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/partials/components/header.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/sidebar.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/fixtures/standard/sidebar.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/layout-sections.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/layout-sections.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/path.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/path.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/integration/plates.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/integration/plates.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/container.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/container.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/extension-layout-sections.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/extension-layout-sections.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/extension-path.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/extension-path.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/extension-render-context.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/extension-render-context.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/fixtures/simple/main.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/fixtures/simple/main.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/render-template.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/render-template.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/template.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/template.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/plates/test/unit/util.spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/plates/test/unit/util.spec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/bin/minifycss" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/bin/minifycss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/bin/minifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/bin/minifyjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/keywords_after.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/keywords_after.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/keywords_before.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/keywords_before.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/keywords_reserved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/keywords_reserved.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/operators.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/operators.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/operators_after.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/operators_after.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/operators_before.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/data/js/operators_before.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/ruleset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/ruleset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/CSS.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/CSS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exception.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exceptions/BasicException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exceptions/BasicException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exceptions/FileImportException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exceptions/FileImportException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exceptions/IOException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Exceptions/IOException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/JS.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/JS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Minify.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/minify/src/Minify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/src/Converter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/src/Converter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/src/ConverterInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/src/ConverterInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/src/NoConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/matthiasmullie/path-converter/src/NoConverter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/COMMITMENT" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/COMMITMENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/SECURITY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-af.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-af.php" afterDir="false" />
@@ -105,6 +417,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-si.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-si.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" afterDir="false" />
@@ -123,6 +436,121 @@
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.github/FUNDING.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.github/workflows/php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.github/workflows/php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.php_cs.dist" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/.php_cs.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/AbstractDetector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/AbstractDetector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/ExifImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/ExifImageType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/FInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/FInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/GetImageSize.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/GetImageSize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/MimeContentType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/MimeContentType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/SniffFirstFourBytes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/SniffFirstFourBytes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/Stack.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/Detectors/Stack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/GuessFromExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/GuessFromExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/ImageMimeTypeGuesser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser/src/ImageMimeTypeGuesser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/.github/FUNDING.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/BACKERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/BACKERS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/composer-php56.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/composer-php56.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/composer-php72.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/composer-php72.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/development.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/development.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/converting/convert-options.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/converting/convert-options.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/converting/convert.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/converting/convert.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/converting/converters.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/converting/converters.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/serving/convert-and-serve.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/serving/convert-and-serve.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/webp-on-demand/tweaks.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/webp-on-demand/tweaks.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/webp-on-demand/webp-on-demand.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/webp-on-demand/webp-on-demand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/webp-on-demand/without-composer.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v1.3/webp-on-demand/without-composer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/converting/converters/stack.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/converting/converters/stack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/converting/introduction-for-converting.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/converting/introduction-for-converting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/converting/options.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/converting/options.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/migrating-to-2.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/migrating-to-2.0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/serving/introduction-for-serving.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/serving/introduction-for-serving.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/serving/laravel-nginx-serving.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/serving/laravel-nginx-serving.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/webp-on-demand/tweaks.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/webp-on-demand/tweaks.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/webp-on-demand/webp-on-demand.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/webp-on-demand/webp-on-demand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/webp-on-demand/without-composer.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/docs/v2.0/webp-on-demand/without-composer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/ConverterFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/ConverterFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/AbstractConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/AbstractConverter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/AutoQualityTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/AutoQualityTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/DestinationPreparationTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/DestinationPreparationTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/LoggerTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/LoggerTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/OptionsTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/OptionsTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/WarningLoggerTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/BaseTraits/WarningLoggerTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/CloudConverterTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/CloudConverterTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/CurlTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/CurlTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/EncodingAutoTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/EncodingAutoTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/ExecTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ConverterTraits/ExecTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Cwebp.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Cwebp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Ewww.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Ewww.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/FFMpeg.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/FFMpeg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Gd.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Gd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Gmagick.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Gmagick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/GmagickBinary.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/GmagickBinary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/GraphicsMagick.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/GraphicsMagick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ImageMagick.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ImageMagick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Imagick.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Imagick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ImagickBinary.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/ImagickBinary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Stack.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Stack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Vips.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Vips.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Wpc.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Converters/Wpc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConversionSkippedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConversionSkippedException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConverterNotOperational/InvalidApiKeyException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConverterNotOperational/InvalidApiKeyException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConverterNotOperational/SystemRequirementsNotMetException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConverterNotOperational/SystemRequirementsNotMetException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConverterNotOperationalException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/ConverterNotOperationalException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/FileSystemProblems/CreateDestinationFileException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/FileSystemProblems/CreateDestinationFileException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/FileSystemProblems/CreateDestinationFolderException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/FileSystemProblems/CreateDestinationFolderException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/FileSystemProblemsException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/FileSystemProblemsException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInput/ConverterNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInput/ConverterNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInput/InvalidImageTypeException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInput/InvalidImageTypeException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInput/TargetNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInput/TargetNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInputException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailed/InvalidInputException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Exceptions/ConversionFailedException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Helpers/JpegQualityDetector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Helpers/JpegQualityDetector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Helpers/PhpIniSizes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Convert/Helpers/PhpIniSizes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/InvalidInput/InvalidImageTypeException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/InvalidInput/InvalidImageTypeException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/InvalidInput/TargetNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/InvalidInput/TargetNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/InvalidInputException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/InvalidInputException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/SanityException.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/SanityException.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/WebPConvertException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Exceptions/WebPConvertException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/BinaryDiscovery.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/BinaryDiscovery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/FileExists.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/FileExists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/InputValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/InputValidator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/MimeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/MimeType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/PathChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/PathChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/Sanitize.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/Sanitize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/SanityCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Helpers/SanityCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Loggers/BaseLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Loggers/BaseLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Loggers/BufferLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Loggers/BufferLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Loggers/EchoLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Loggers/EchoLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/ArrayOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/ArrayOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/BooleanOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/BooleanOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Exceptions/InvalidOptionTypeException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Exceptions/InvalidOptionTypeException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Exceptions/InvalidOptionValueException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Exceptions/InvalidOptionValueException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Exceptions/OptionNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Exceptions/OptionNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/GhostOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/GhostOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/IntegerOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/IntegerOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/IntegerOrNullOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/IntegerOrNullOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/MetadataOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/MetadataOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Option.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Option.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Options.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/Options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/QualityOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/QualityOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/SensitiveArrayOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/SensitiveArrayOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/SensitiveStringOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/SensitiveStringOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/StringOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Options/StringOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/Exceptions/ServeFailedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/Exceptions/ServeFailedException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/Header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/Report.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/Report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/ServeConvertedWebP.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/ServeConvertedWebP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/ServeConvertedWebPWithErrorHandling.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/ServeConvertedWebPWithErrorHandling.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/ServeFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/Serve/ServeFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/WebPConvert.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rosell-dk/webp-convert/src/WebPConvert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +563,6 @@
       <executable path="composer" />
     </execution>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -150,51 +571,55 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
-      <path value="$PROJECT_DIR$/vendor/rosell-dk/webp-convert" />
-      <path value="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/paginator" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
-      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/uploader" />
       <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
       <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/uploader" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/paginator" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser" />
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/webp-convert" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
       <path value="$PROJECT_DIR$/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2UtI60EV8q5XL9Bu5t7ZwYUHizU" />
+  <component name="ProjectId" id="2VH3ZXXlt6OruSd5VswcUULYXIR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/cursos/fsphp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/xampp/htdocs/projetos/portiflio-chat",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PHP"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cursos\fsphp\shared\views\email" />
       <recent name="C:\xampp\htdocs\cursos\fsphp\source\Boot\Minify" />
       <recent name="C:\xampp\htdocs\cursos\fsphp\themes\cafeapp" />
     </key>
@@ -205,22 +630,50 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a511c87c-dae5-4ce1-825e-24318859ba25" name="Changes" comment="" />
-      <created>1693752275028</created>
+      <changelist id="3276c3bd-49ab-466c-8545-5ae7a38df8bf" name="Changes" comment="" />
+      <created>1694479236321</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1693752275028</updated>
-      <workItem from="1693752282526" duration="13737000" />
-      <workItem from="1693793417632" duration="660000" />
-      <workItem from="1693866566475" duration="6630000" />
-      <workItem from="1693955372094" duration="6810000" />
-      <workItem from="1694036884012" duration="18000" />
-      <workItem from="1694038066041" duration="6224000" />
-      <workItem from="1694045317191" duration="2713000" />
+      <updated>1694479236321</updated>
+      <workItem from="1694479244150" duration="1520000" />
+      <workItem from="1694645096023" duration="2400000" />
+      <workItem from="1694650000919" duration="3316000" />
+      <workItem from="1695160917020" duration="12660000" />
+      <workItem from="1695175011758" duration="1205000" />
+      <workItem from="1695249951574" duration="6314000" />
+      <workItem from="1695338945354" duration="1676000" />
+      <workItem from="1695340871675" duration="1787000" />
+      <workItem from="1695425180601" duration="461000" />
+      <workItem from="1695425808233" duration="175000" />
+      <workItem from="1695566251317" duration="5387000" />
+      <workItem from="1695769608999" duration="7946000" />
+      <workItem from="1695852419030" duration="4526000" />
+      <workItem from="1695860273242" duration="210000" />
+      <workItem from="1695940578456" duration="1647000" />
+      <workItem from="1695945590267" duration="7272000" />
+      <workItem from="1695953947646" duration="195000" />
+      <workItem from="1696015805812" duration="120000" />
+      <workItem from="1696028917321" duration="8576000" />
+      <workItem from="1696108775645" duration="22000" />
+      <workItem from="1696542526453" duration="5071000" />
+      <workItem from="1696548706894" duration="564000" />
+      <workItem from="1696549542346" duration="2231000" />
+      <workItem from="1696557115364" duration="95000" />
+      <workItem from="1696888377642" duration="12491000" />
+      <workItem from="1696901950470" duration="2146000" />
+      <workItem from="1696904168224" duration="205000" />
+      <workItem from="1696904448895" duration="60000" />
+      <workItem from="1696977284394" duration="8272000" />
+      <workItem from="1697061973317" duration="336000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modulo SaaS" />
+    <MESSAGE value="Integralção Pagar.me" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integralção Pagar.me" />
   </component>
 </project>

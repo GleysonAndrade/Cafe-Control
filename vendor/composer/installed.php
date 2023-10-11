@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'upinside/fsphp',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '32a6126a0e29abe322c6b9e87fbde9d4ead7864d',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'coffeecode/cropper' => array(
-            'pretty_version' => '1.3.4',
-            'version' => '1.3.4.0',
-            'reference' => '4c98fa8601ad1dcb3d94a605e7bfa36b7ac5b87e',
+            'pretty_version' => '1.3.5',
+            'version' => '1.3.5.0',
+            'reference' => '25fa1c68359cca1d3bc71a72fb24c9589d3e5f61',
             'type' => 'library',
             'install_path' => __DIR__ . '/../coffeecode/cropper',
             'aliases' => array(),
@@ -110,9 +110,9 @@
             'dev_requirement' => false,
         ),
         'upinside/fsphp' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '32a6126a0e29abe322c6b9e87fbde9d4ead7864d',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

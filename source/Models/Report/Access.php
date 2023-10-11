@@ -6,12 +6,13 @@ use Source\Core\Model;
 use Source\Core\Session;
 
 /**
- *
+ * Class Access
+ * @package Source\Models\Report
  */
 class Access extends Model
 {
     /**
-     *
+     * Access constructor.
      */
     public function __construct()
     {
@@ -19,7 +20,6 @@ class Access extends Model
     }
 
     /**
-     * Traz o relatório de acesso do dia
      * @return Access
      */
     public function report(): Access
@@ -39,13 +39,11 @@ class Access extends Model
             return $this;
         }
 
-        /** Atualiza o usuário */
         if (!filter_input(INPUT_COOKIE, "access")) {
             $find->users += 1;
             setcookie("access", true, time() + 86400, "/");
         }
 
-        /** Atualiza as views */
         if (!$session->has("access")) {
             $find->views += 1;
             $session->set("access", true);
@@ -53,7 +51,6 @@ class Access extends Model
 
         $find->pages += 1;
         $find->save();
-
         return $this;
     }
 }

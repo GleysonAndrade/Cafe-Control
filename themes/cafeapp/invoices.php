@@ -1,7 +1,6 @@
 <?php $v->layout("_theme"); ?>
 
 <div class="app_launch_header">
-
     <form class="app_launch_form_filter app_form" action="<?= url("/app/filter"); ?>" method="post">
         <input type="hidden" name="filter" value="<?= $type; ?>"/>
 
@@ -12,7 +11,7 @@
         </select>
 
         <select name="category">
-            <option value="">Todas</option>
+            <option value="all">Todas</option>
             <?php foreach ($categories as $category): ?>
                 <option <?= (!empty($filter->category) && $filter->category == $category->id ? "selected" : ""); ?>
                         value="<?= $category->id; ?>"><?= $category->name; ?></option>
@@ -77,11 +76,14 @@
                     <?php if ($invoice->repeat_when == "fixed"): ?>
                         <span class="app_invoice_link">
                             <a href="<?= url("/app/fatura/{$invoice->invoice_of}"); ?>" class="icon-exchange"
-                               title="Controlar">Fixa</a>
+                               title="Controlar Conta Fixa">Fixa</a>
                         </span>
                     <?php elseif ($invoice->repeat_when == 'enrollment'): ?>
-                        <?= str_pad($invoice->enrollment_of, 2, 0, 0); ?> de <?= str_pad($invoice->enrollments, 2, 0,
-                            0); ?>
+                        <span class="app_invoice_link">
+                            <a href="<?= url("/app/fatura/{$invoice->invoice_of}"); ?>"
+                               title="Controlar Parcelamento"><?= str_pad($invoice->enrollment_of, 2, 0,
+                                    0); ?> de <?= str_pad($invoice->enrollments, 2, 0, 0); ?></a>
+                        </span>
                     <?php else: ?>
                         <span class="icon-calendar-check-o">Única</span>
                     <?php endif; ?>

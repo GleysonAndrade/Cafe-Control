@@ -52,7 +52,8 @@ $(function () {
     $(".j_collapse").click(function () {
         var collapse = $(this);
 
-        collapse.find(".j_collapse_icon").toggleClass("icon-minus").toggleClass("icon-plus");
+        collapse.parents().find(".j_collapse_icon").removeClass("icon-minus").addClass("icon-plus");
+        collapse.find(".j_collapse_icon").removeClass("icon-plus").addClass("icon-minus");
 
         if (collapse.find(".j_collapse_box").is(":visible")) {
             collapse.find(".j_collapse_box").slideUp(200);
@@ -63,7 +64,7 @@ $(function () {
     });
 
     //ajax form
-    $("form:not('.')").submit(function (e) {
+    $("form:not('.ajax_off')").submit(function (e) {
         e.preventDefault();
         var form = $(this);
         var load = $(".ajax_load");
@@ -103,6 +104,5 @@ $(function () {
                 }
             }
         });
-
     });
 });

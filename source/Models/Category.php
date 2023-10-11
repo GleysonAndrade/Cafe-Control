@@ -5,12 +5,13 @@ namespace Source\Models;
 use Source\Core\Model;
 
 /**
- *
+ * Class Category
+ * @package Source\Models
  */
 class Category extends Model
 {
     /**
-     * Category constructor
+     * Category constructor.
      */
     public function __construct()
     {
@@ -20,7 +21,7 @@ class Category extends Model
     /**
      * @param string $uri
      * @param string $columns
-     * @return Category|null
+     * @return null|Category
      */
     public function findByUri(string $uri, string $columns = "*"): ?Category
     {

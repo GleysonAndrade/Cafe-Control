@@ -6,16 +6,16 @@ use Source\Core\Model;
 use Source\Core\Session;
 
 /**
- *
+ * Class Online
+ * @package Source\Models\Report
  */
 class Online extends Model
 {
-    /**
-     * @var int
-     */
+    /** @var int */
     private $sessionTime;
 
     /**
+     * Online constructor.
      * @param int $sessionTime
      */
     public function __construct(int $sessionTime = 20)
@@ -25,7 +25,6 @@ class Online extends Model
     }
 
     /**
-     * Faz a contagem dos usuários online
      * @param bool $count
      * @return array|int|null
      */
@@ -65,7 +64,7 @@ class Online extends Model
         }
 
         $find->user = ($session->authUser ?? null);
-        $find->url = (filter_input(INPUT_GET,"route", FILTER_SANITIZE_STRIPPED) ?? "/");
+        $find->url = (filter_input(INPUT_GET, "route", FILTER_SANITIZE_STRIPPED) ?? "/");
         $find->pages += 1;
         $find->save();
 
@@ -77,10 +76,9 @@ class Online extends Model
     }
 
     /**
-     * Clear Online
-     * @return void
+     * CLEAR ONLINE
      */
-    public function clear(): void
+    private function clear()
     {
         $this->delete("updated_at <= NOW() - INTERVAL {$this->sessionTime} MINUTE", null);
     }

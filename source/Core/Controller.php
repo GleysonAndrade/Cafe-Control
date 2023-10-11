@@ -8,28 +8,25 @@ use Source\Support\Seo;
 /**
  * FSPHP | Class Controller
  *
- * @author Gleyson A. <gleysondev@yahoo.com>
+ * @author Robson V. Leite <cursos@upinside.com.br>
  * @package Source\Core
  */
 class Controller
 {
-    /**
-     * @var View
-     */
+    /** @var View */
     protected $view;
-    /**
-     * @var Seo
-     */
+
+    /** @var Seo */
     protected $seo;
-    /**
-     * @var Message
-     */
+
+    /** @var Message */
     protected $message;
 
     /**
-     * @param $pathToViews
+     * Controller constructor.
+     * @param string|null $pathToViews
      */
-    public function __construct($pathToViews = null)
+    public function __construct(string $pathToViews = null)
     {
         $this->view = new View($pathToViews);
         $this->seo = new Seo();

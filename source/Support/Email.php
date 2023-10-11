@@ -2,8 +2,8 @@
 
 namespace Source\Support;
 
-use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
 use Source\Core\Connect;
 
 /**
@@ -75,7 +75,6 @@ class Email
     }
 
     /**
-     * Faz o agendamento dos e-mails
      * @param $from
      * @param $fromName
      * @return bool
@@ -111,16 +110,43 @@ class Email
 
             $this->mail->send();
             return true;
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
             $this->message->error($exception->getMessage());
             return false;
         }
     }
 
     /**
-     * Faz o envio dos e-mails agendados
+     * @param string $from
+     * @param string $fromName
+     * @return bool
+     */
+    public function queue(string $from = CONF_MAIL_SENDER['address'], string $fromName = CONF_MAIL_SENDER["name"]): bool
+    {
+        try {
+            $stmt = Connect::getInstance()->prepare(
+                "INSERT INTO
+                    mail_queue (subject, body, from_email, from_name, recipient_email, recipient_name)
+                    VALUES (:subject, :body, :from_email, :from_name, :recipient_email, :recipient_name)"
+            );
+
+            $stmt->bindValue(":subject", $this->data->subject, \PDO::PARAM_STR);
+            $stmt->bindValue(":body", $this->data->body, \PDO::PARAM_STR);
+            $stmt->bindValue(":from_email", $from, \PDO::PARAM_STR);
+            $stmt->bindValue(":from_name", $fromName, \PDO::PARAM_STR);
+            $stmt->bindValue(":recipient_email", $this->data->recipient_email, \PDO::PARAM_STR);
+            $stmt->bindValue(":recipient_name", $this->data->recipient_name, \PDO::PARAM_STR);
+
+            $stmt->execute();
+            return true;
+        } catch (\PDOException $exception) {
+            $this->message->error($exception->getMessage());
+            return false;
+        }
+    }
+
+    /**
      * @param int $perSecond
-     * @return void
      */
     public function sendQueue(int $perSecond = 5)
     {
@@ -136,38 +162,9 @@ class Email
 
                 if ($email->send($send->from_email, $send->from_name)) {
                     usleep(1000000 / $perSecond);
-                    Connect::getInstance()->exec("UPADATE mail_queue SET sent_at = NOW() WHERE id = {$send->id}");
+                    Connect::getInstance()->exec("UPDATE mail_queue SET sent_at = NOW() WHERE id = {$send->id}");
                 }
             }
-        }
-    }
-
-    /**
-     * @param string $from
-     * @param string $fromName
-     * @return bool
-     */
-    public function queue(string $from = CONF_MAIL_SENDER['address'], string $fromName = CONF_MAIL_SENDER["name"]): bool
-    {
-        try {
-            $stmt = Connect::getInstance()->prepare(
-                "INSERT INTO
-                    mail_queue (subject, body, from_email, from_name, recipient_email, recipient_name)
-                VALUES (:subject, :body, :from_email, :from_name, :recipient_email, :recipient_name)"
-            );
-
-            $stmt->bindValue(":subject", $this->data->subject, \PDO::PARAM_STR);
-            $stmt->bindValue(":body", $this->data->body, \PDO::PARAM_STR);
-            $stmt->bindValue(":from_email", $this->data->from_email, \PDO::PARAM_STR);
-            $stmt->bindValue(":from_name", $this->data->from_name, \PDO::PARAM_STR);
-            $stmt->bindValue(":recipient_email", $this->data->recipient_email, \PDO::PARAM_STR);
-            $stmt->bindValue(":recipient_name", $this->data->recipient_name, \PDO::PARAM_STR);
-
-            $stmt->execute();
-            return true;
-        } catch (\PDOException $exception) {
-            $this->message->error($exception->getMessage());
-            return false;
         }
     }
 
@@ -186,5 +183,4 @@ class Email
     {
         return $this->message;
     }
-
 }

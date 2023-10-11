@@ -22,10 +22,10 @@ define("CONF_SITE_TITLE", "Gerencie suas contas com o melhor café");
 define("CONF_SITE_DESC", "O CafeControl é um gerenciador de contas simples, poderoso e gratuito. O prazer de tomar um café e ter o controle total de suas contas.");
 define("CONF_SITE_LANG", "pt_BR");
 define("CONF_SITE_DOMAIN", "upinside.com.br");
-define("CONF_SITE_ADDR_STREET", "SC 486 - Rod. Drª Antônio  Luiz Moura Gonzaga");
+define("CONF_SITE_ADDR_STREET", "SC 406 - Rod. Drº Antônio Luiz Moura Gonzaga");
 define("CONF_SITE_ADDR_NUMBER", "3339");
-define("CONF_SITE_ADDR_COMPLEMENT", "Blog A, Sala 208");
-define("CONF_SITE_ADDR_CITY", "Florianopolis");
+define("CONF_SITE_ADDR_COMPLEMENT", "Bloco A, Sala 208");
+define("CONF_SITE_ADDR_CITY", "Florianópolis");
 define("CONF_SITE_ADDR_STATE", "SC");
 define("CONF_SITE_ADDR_ZIPCODE", "88048-301");
 
@@ -39,8 +39,8 @@ define("CONF_SOCIAL_FACEBOOK_PAGE", "upinside");
 define("CONF_SOCIAL_FACEBOOK_AUTHOR", "robsonvleiteoficial");
 define("CONF_SOCIAL_GOOGLE_PAGE", "107305124528362639842");
 define("CONF_SOCIAL_GOOGLE_AUTHOR", "103958419096641225872");
-define("CONF_SOCIAL_INSTAGRAM_PAGE", "");
-define("CONF_SOCIAL_YOUTUBE_PAGE", "");
+define("CONF_SOCIAL_INSTAGRAM_PAGE", "robsonvleite");
+define("CONF_SOCIAL_YOUTUBE_PAGE", "upinside");
 
 /**
  * DATES
@@ -82,14 +82,22 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 /**
  * MAIL
  */
-define("CONF_MAIL_HOST", "mail.gleysondev.com.br");
-define("CONF_MAIL_PORT", 465);
-define("CONF_MAIL_USER", "contato@gleysondev.com.br");
-define("CONF_MAIL_PASS", "SLo+MEL[%]++");
-define("CONF_MAIL_SENDER", ["name" => "Gleyson A Andrade", "address" => "gleysonandrade199@gmail.com"]);
-define("CONF_MAIL_SUPPORT", "gleysonandrade199@gmail.com");
+define("CONF_MAIL_HOST", "mail.agenciamyhelp.com.br");
+define("CONF_MAIL_PORT", "465");
+define("CONF_MAIL_USER", "contato@agenciamyhelp.com.br");
+define("CONF_MAIL_PASS", "contato@mhs#!");
+define("CONF_MAIL_SENDER", ["name" => "Gleyson A. Andrade", "address" => "contato@gleysondev.com.br"]);
+define("CONF_MAIL_SUPPORT", "gleysondev@yahoo.com");
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
 define("CONF_MAIL_OPTION_AUTH", true);
 define("CONF_MAIL_OPTION_SECURE", "tls");
 define("CONF_MAIL_OPTION_CHARSET", "utf-8");
+
+/**
+ * PAGAR.ME - 1.0
+ */
+define("CONF_PAGARME_MODE", "teste");
+define("CONF_PAGARME_LIVE", "");
+define("CONF_PAGARME_TESTE", "");
+define("CONF_PAGARME_BACK", CONF_URL_BASE . "/pay/callback");

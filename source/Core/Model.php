@@ -116,26 +116,27 @@ abstract class Model
     }
 
     /**
-     * @param string|null $terms
-     * @param string|null $params
+     * @param null|string $terms
+     * @param null|string $params
      * @param string $columns
      * @return Model|mixed
      */
-    public function find(?string  $terms = null, ?string $params = null, string $columns = "*")
+    public function find(?string $terms = null, ?string $params = null, string $columns = "*")
     {
         if ($terms) {
-            $this->query =  "SELECT {$columns} FROM " . static::$entity." WHERE {$terms}";
+            $this->query = "SELECT {$columns} FROM " . static::$entity . " WHERE {$terms}";
             parse_str($params, $this->params);
             return $this;
         }
-        $this->query =  "SELECT {$columns} FROM " . static::$entity;
+
+        $this->query = "SELECT {$columns} FROM " . static::$entity;
         return $this;
     }
 
     /**
      * @param int $id
      * @param string $columns
-     * @return Model|null|mixed
+     * @return null|mixed|Model
      */
     public function findById(int $id, string $columns = "*"): ?Model
     {
@@ -206,7 +207,7 @@ abstract class Model
     {
         $stmt = Connect::getInstance()->prepare($this->query);
         $stmt->execute($this->params);
-        return  $stmt->rowCount();
+        return $stmt->rowCount();
     }
 
     /**
@@ -219,7 +220,7 @@ abstract class Model
             $columns = implode(", ", array_keys($data));
             $values = ":" . implode(", :", array_keys($data));
 
-            $stmt = Connect::getInstance()->prepare("INSERT INTO ". static::$entity ." ({$columns}) VALUES ({$values})");
+            $stmt = Connect::getInstance()->prepare("INSERT INTO " . static::$entity . " ({$columns}) VALUES ({$values})");
             $stmt->execute($this->filter($data));
 
             return Connect::getInstance()->lastInsertId();
@@ -245,7 +246,7 @@ abstract class Model
             $dateSet = implode(", ", $dateSet);
             parse_str($params, $params);
 
-            $stmt = Connect::getInstance()->prepare("UPDATE ". static::$entity ." SET {$dateSet} WHERE {$terms}");
+            $stmt = Connect::getInstance()->prepare("UPDATE " . static::$entity . " SET {$dateSet} WHERE {$terms}");
             $stmt->execute($this->filter(array_merge($data, $params)));
             return ($stmt->rowCount() ?? 1);
         } catch (\PDOException $exception) {
@@ -255,15 +256,15 @@ abstract class Model
     }
 
     /**
-     * Salva os dados no banco
      * @return bool
      */
     public function save(): bool
     {
-        if (!$this->required()){
+        if (!$this->required()) {
             $this->message->warning("Preencha todos os campos para continuar");
             return false;
         }
+
         /** Update */
         if (!empty($this->id)) {
             $id = $this->id;
@@ -289,13 +290,13 @@ abstract class Model
 
     /**
      * @param string $terms
-     * @param string|null $params
+     * @param null|string $params
      * @return bool
      */
     public function delete(string $terms, ?string $params): bool
     {
         try {
-            $stmt = Connect::getInstance()->prepare("DELETE FROM ". static::$entity ." WHERE {$terms}");
+            $stmt = Connect::getInstance()->prepare("DELETE FROM " . static::$entity . " WHERE {$terms}");
             if ($params) {
                 parse_str($params, $params);
                 $stmt->execute($params);

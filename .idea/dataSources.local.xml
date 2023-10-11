@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PS-232.9559.64">
-    <data-source name="fullstackphp@localhost" uuid="529b93e1-ea55-4dcd-9460-5f6df2296fa0">
+  <component name="dataSourceStorageLocal" created-in="PS-232.9921.55">
+    <data-source name="fullstackphp@localhost" uuid="8dfd62a1-12ba-41e2-8fb2-b6394959053e">
       <database-info product="MySQL" version="5.5.5-10.4.27-MariaDB" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MARIADB" exact-version="10.4.27" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>

@@ -90,9 +90,9 @@ function str_title(string $string): string
  */
 function str_textarea(string $text): string
 {
-    $text = filter_var($text, FILTER_SANITIZE_STRIPPED);
-    $arrayReplace = ["&#10", "&#10;&#10", "&#10,&#10,&#10", "&#10,&#10,&#10,&#10", "&#10,&#10,&#10,&#10,&#10"];
-    return "<p>". str_replace($arrayReplace, "<p></p>", $text) . "</p>";
+    $text =  filter_var($text, FILTER_SANITIZE_STRIPPED);
+    $arrayreplace = ["&#10;", "&#10;&#10;", "&#10;&#10;&#10;", "&#10;&#10;&#10;&#10;", "&#10;&#10;&#10;&#10;&#10;"];
+    return "<p>" . str_replace($arrayreplace, "</p><p>", $text) . "</p>";
 }
 
 /**
@@ -136,7 +136,7 @@ function str_limit_chars(string $string, int $limit, string $pointer = "..."): s
  * @param string $price
  * @return string
  */
-function str_price(string  $price): string
+function str_price(string $price): string
 {
     return number_format($price, 2, ",", ".");
 }
@@ -159,9 +159,11 @@ function url(string $path = null): string
         }
         return CONF_URL_TEST;
     }
+
     if ($path) {
         return CONF_URL_BASE . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
     }
+
     return CONF_URL_BASE;
 }
 
@@ -183,6 +185,7 @@ function redirect(string $url): void
         header("Location: {$url}");
         exit;
     }
+
     if (filter_input(INPUT_GET, "route", FILTER_DEFAULT) != $url) {
         $location = url($url);
         header("Location: {$location}");
@@ -192,9 +195,10 @@ function redirect(string $url): void
 
 /**
  * ##################
- * ###   Assets   ###
+ * ###   ASSETS   ###
  * ##################
  */
+
 
 /**
  * @return \Source\Models\User|null
@@ -202,6 +206,14 @@ function redirect(string $url): void
 function user(): ?\Source\Models\User
 {
     return \Source\Models\Auth::user();
+}
+
+/**
+ * @return \Source\Core\Session
+ */
+function session(): \Source\Core\Session
+{
+    return new \Source\Core\Session();
 }
 
 /**
@@ -215,11 +227,14 @@ function theme(string $path = null, string $theme = CONF_VIEW_THEME): string
         if ($path) {
             return CONF_URL_TEST . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
         }
+
         return CONF_URL_TEST . "/themes/{$theme}";
     }
+
     if ($path) {
         return CONF_URL_BASE . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
     }
+
     return CONF_URL_BASE . "/themes/{$theme}";
 }
 
@@ -283,6 +298,7 @@ function passwd(string $password): string
     if (!empty(password_get_info($password)['algo'])) {
         return $password;
     }
+
     return password_hash($password, CONF_PASSWD_ALGO, CONF_PASSWD_OPTION);
 }
 
@@ -306,8 +322,8 @@ function passwd_rehash(string $hash): bool
 }
 
 /**
- * ####################
- * ###   RESQUEST   ###
+ * ###################
+ * ###   REQUEST   ###
  * ###################
  */
 
@@ -335,19 +351,18 @@ function csrf_verify($request): bool
 }
 
 /**
- * @return string|null
+ * @return null|string
  */
 function flash(): ?string
 {
     $session = new \Source\Core\Session();
     if ($flash = $session->flash()) {
-        echo $flash;
+        return $flash;
     }
     return null;
 }
 
 /**
- * Limita a quantidade de requisições
  * @param string $key
  * @param int $limit
  * @param int $seconds

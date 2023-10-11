@@ -24,10 +24,10 @@ class Post extends Model
     }
 
     /**
-     * @param string|null $terms
-     * @param string|null $params
+     * @param null|string $terms
+     * @param null|string $params
      * @param string $columns
-     * @return Model
+     * @return mixed|Model
      */
     public function find(?string $terms = null, ?string $params = null, string $columns = "*")
     {
@@ -41,7 +41,7 @@ class Post extends Model
     /**
      * @param string $uri
      * @param string $columns
-     * @return Post|null
+     * @return null|Post
      */
     public function findByUri(string $uri, string $columns = "*"): ?Post
     {
@@ -50,7 +50,7 @@ class Post extends Model
     }
 
     /**
-     * @return User|null
+     * @return null|User
      */
     public function author(): ?User
     {
@@ -61,7 +61,7 @@ class Post extends Model
     }
 
     /**
-     * @return Category|null
+     * @return null|Category
      */
     public function category(): ?Category
     {
